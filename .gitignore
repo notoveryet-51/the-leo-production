@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Temporary Video Recorder Files
+recordings/
+record.js
+
+# OS Clutter
+.DS_Store
+Thumbs.db
+*.log

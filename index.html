@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Leo production - Professional Video Editor. We don't just edit, we tell your story. Custom reels, weddings, events, music videos, and video production services.">
+    <meta name="keywords" content="video editor, reels editor, wedding video editor, music video editing, video production, the leo production">
+    <meta name="author" content="The Leo production">
+    <title>The Leo production | Professional Video Editor</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Background Canvas for Fiery Embers -->
+    <canvas id="embers-canvas"></canvas>
+
+    <!-- Floating Navigation Bar -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="logo-area">
+                <img src="assets/logo.png" alt="The Leo production Logo" class="header-logo">
+                <span class="logo-text">The <span class="gold-text">Leo</span> <span class="thin-text">production</span></span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#pillars">Pillars</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Toggle menu">
+                    <i data-lucide="menu" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <div class="drawer-header">
+            <span class="logo-text">The <span class="gold-text">Leo</span></span>
+            <button class="mobile-menu-close" id="mobile-drawer-close">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <nav class="drawer-nav">
+            <a href="#services" class="drawer-link">Services</a>
+            <a href="#pillars" class="drawer-link">Pillars</a>
+            <a href="#portfolio" class="drawer-link">Portfolio</a>
+            <a href="#contact" class="drawer-link">Contact</a>
+        </nav>
+    </div>
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content container">
+                <div class="hero-badge" data-reveal>
+                    <span class="badge-line"></span>
+                    <span class="badge-text">PROFESSIONAL VIDEO EDITOR</span>
+                    <span class="badge-line"></span>
+                </div>
+                
+                <div class="hero-logo-container" data-reveal>
+                    <div class="logo-glow-ring"></div>
+                    <img src="assets/logo.png" alt="The Leo production" class="hero-main-logo">
+                </div>
+
+                <h1 class="hero-headline" data-reveal>
+                    WE DON'T JUST EDIT,<br>
+                    <span class="gold-gradient-text">— WE TELL YOUR STORY. —</span>
+                </h1>
+                
+                <p class="hero-subtext" data-reveal>
+                    High-end post-production, dynamic color grading, sound design, and storytelling tailored to captivate your audience.
+                </p>
+
+                <div class="hero-ctas" data-reveal>
+                    <a href="#portfolio" class="btn btn-primary btn-glow">View My Works</a>
+                    <a href="#contact" class="btn btn-outline">Let's Collaborate</a>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator-container">
+                <span class="scroll-label">Scroll to explore</span>
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section container">
+            <div class="section-header text-center">
+                <h2 class="section-title"><span class="gold-underline">OUR SERVICES</span></h2>
+                <p class="section-subtitle">Crafting visual masterpieces across multiple domains and formats.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service Card 1 -->
+                <div class="service-card" data-reveal>
+                    <div class="card-glow"></div>
+                    <div class="service-icon-box">
+                        <i data-lucide="clock-3" class="service-icon"></i>
+                    </div>
+                    <h3>First Delivery</h3>
+                    <p>Express rendering and delivery options for time-sensitive launches, keeping quality paramount.</p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card" data-reveal>
+                    <div class="card-glow"></div>
+                    <div class="service-icon-box">
+                        <i data-lucide="smartphone" class="service-icon"></i>
+                    </div>
+                    <h3>Reels Edit</h3>
+                    <p>High-retention, snappy editing for Instagram Reels, YouTube Shorts, and TikTok with trendy text animations.</p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card" data-reveal>
+                    <div class="card-glow"></div>
+                    <div class="service-icon-box">
+                        <i data-lucide="heart" class="service-icon"></i>
+                    </div>
+                    <h3>Wedding Video Edit</h3>
+                    <p>Cinematic romance stories. We beautifully weave highlight films, trailers, and full event documentation.</p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="service-card" data-reveal>
+                    <div class="card-glow"></div>
+                    <div class="service-icon-box">
+                        <i data-lucide="party-popper" class="service-icon"></i>
+                    </div>
+                    <h3>Any Event Video Edit</h3>
+                    <p>Capturing the energy of corporate events, concerts, parties, and festivals with modern montage techniques.</p>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="service-card" data-reveal>
+                    <div class="card-glow"></div>
+                    <div class="service-icon-box">
+                        <i data-lucide="scissors" class="service-icon"></i>
+                    </div>
+                    <h3>Digital Editing</h3>
+                    <p>Precise cuts, pacing calibration, multi-cam synchronization, and overall timeline management.</p>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="service-card" data-reveal>
+                    <div class="card-glow"></div>
+                    <div class="service-icon-box">
+                        <i data-lucide="lightbulb" class="service-icon"></i>
+                    </div>
+                    <h3>Content Creation</h3>
+                    <p>Creative direction, scripting guidance, and pacing analysis to grow your personal brand or business channel.</p>
+                </div>
+
+                <!-- Service Card 7 -->
+                <div class="service-card" data-reveal>
+                    <div class="card-glow"></div>
+                    <div class="service-icon-box">
+                        <i data-lucide="music" class="service-icon"></i>
+                    </div>
+                    <h3>Music Video Editing</h3>
+                    <p>Beat-matching, visual rhythm styling, speed ramping, transitions, and aesthetic visual overlays.</p>
+                </div>
+
+                <!-- Service Card 8 -->
+                <div class="service-card" data-reveal>
+                    <div class="card-glow"></div>
+                    <div class="service-icon-box">
+                        <i data-lucide="video" class="service-icon"></i>
+                    </div>
+                    <h3>Video Production</h3>
+                    <p>Full-scale planning, pre-production, filming assistance, and post-production execution.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Pillars Section -->
+        <section id="pillars" class="pillars-section">
+            <div class="container">
+                <div class="pillars-container">
+                    <div class="pillar-item" data-reveal>
+                        <div class="pillar-icon-box">
+                            <i data-lucide="clapperboard"></i>
+                        </div>
+                        <h4 class="pillar-title">DIGITAL EDITING</h4>
+                        <p class="pillar-desc">State of the art non-linear editing software and high-performance workflows.</p>
+                    </div>
+                    <div class="pillar-item" data-reveal>
+                        <div class="pillar-icon-box">
+                            <i data-lucide="pen-tool"></i>
+                        </div>
+                        <h4 class="pillar-title">VISUAL STORYTELLING</h4>
+                        <p class="pillar-desc">Structuring the narrative arc to build tension, emotion, and retention.</p>
+                    </div>
+                    <div class="pillar-item" data-reveal>
+                        <div class="pillar-icon-box">
+                            <i data-lucide="aperture"></i>
+                        </div>
+                        <h4 class="pillar-title">CREATIVE APPROACH</h4>
+                        <p class="pillar-desc">Unique color grading, tailored soundscapes, and customized graphic elements.</p>
+                    </div>
+                    <div class="pillar-item" data-reveal>
+                        <div class="pillar-icon-box">
+                            <i data-lucide="rocket"></i>
+                        </div>
+                        <h4 class="pillar-title">FAST & RELIABLE</h4>
+                        <p class="pillar-desc">Consistent delivery deadlines, cloud collaboration, and rapid revisions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Portfolio Section -->
+        <section id="portfolio" class="portfolio-section container">
+            <div class="section-header text-center">
+                <h2 class="section-title"><span class="gold-underline">SAMPLE WORKS</span></h2>
+                <p class="section-subtitle">A curated collection of recent visual masterpieces.</p>
+            </div>
+
+            <!-- Portfolio Categories Filter -->
+            <div class="portfolio-filters" id="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Works</button>
+                <button class="filter-btn" data-filter="reels">Reels</button>
+                <button class="filter-btn" data-filter="weddings">Weddings</button>
+                <button class="filter-btn" data-filter="music">Music Videos</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+            </div>
+
+            <!-- Grid of Videos -->
+            <div class="portfolio-grid" id="portfolio-grid">
+                <!-- Dynamic Portfolio Cards will be inserted here by JS -->
+            </div>
+            
+            <div class="portfolio-empty-state" id="portfolio-empty-state">
+                <i data-lucide="film" class="empty-icon"></i>
+                <p>No works found in this category.</p>
+            </div>
+        </section>
+
+        <!-- Quote / Passion Section -->
+        <section class="quote-section">
+            <div class="quote-bg-glow"></div>
+            <div class="container text-center">
+                <h2 class="passion-quote" data-reveal>
+                    EDITING IS OUR PASSION,<br>
+                    <span class="gold-glow-text">PERFECTION IS OUR PROMISE.</span>
+                </h2>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section container">
+            <div class="section-header text-center">
+                <h2 class="section-title"><span class="gold-underline">GET IN TOUCH</span></h2>
+                <p class="section-subtitle">Ready to tell your story? Let's discuss your next project.</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <!-- Contact Info Panel (styled like flyer) -->
+                <div class="contact-info-panel" data-reveal>
+                    <div class="info-logo-area">
+                        <img src="assets/logo.png" alt="The Leo production logo" class="info-logo">
+                        <h3>The Leo production</h3>
+                        <p class="info-subtitle">PROFESSIONAL VIDEO EDITOR</p>
+                    </div>
+
+                    <div class="info-details-box">
+                        <a href="tel:7439211201" class="info-detail-item">
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <div class="info-text">
+                                <span class="info-label">CONTACT NUMBER</span>
+                                <span class="info-value">7439211201</span>
+                            </div>
+                        </a>
+
+                        <a href="https://instagram.com/_the_leo_production_" target="_blank" rel="noopener" class="info-detail-item">
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                            </div>
+                            <div class="info-text">
+                                <span class="info-label">INSTAGRAM</span>
+                                <span class="info-value">_the_leo_production_</span>
+                            </div>
+                        </a>
+
+                        <a href="mailto:editing.theleo07@gmail.com" class="info-detail-item">
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            </div>
+                            <div class="info-text">
+                                <span class="info-label">EMAIL ID</span>
+                                <span class="info-value">editing.theleo07@gmail.com</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form" id="contact-form" data-reveal>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="contact-name" name="name" required placeholder=" ">
+                            <label for="contact-name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contact-email" name="email" required placeholder=" ">
+                            <label for="contact-email">Email Address</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <select id="contact-project" name="project" required>
+                            <option value="" disabled selected hidden>Select Project Type</option>
+                            <option value="Reels Edit">Reels Edit</option>
+                            <option value="Wedding Highlight">Wedding Video Edit</option>
+                            <option value="Event Coverage">Event Video Edit</option>
+                            <option value="Music Video">Music Video Editing</option>
+                            <option value="Video Production">Full Video Production</option>
+                            <option value="Other">Other Digital Editing</option>
+                        </select>
+                        <i data-lucide="chevron-down" class="select-chevron"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="contact-message" name="message" rows="5" required placeholder=" "></textarea>
+                        <label for="contact-message">Tell me about your project & vision...</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-glow btn-block" id="form-submit-btn">
+                        <span>Send Message</span>
+                        <i data-lucide="send" class="btn-icon"></i>
+                    </button>
+                    
+                    <!-- Submission Success Overlay -->
+                    <div class="form-success-overlay" id="form-success-overlay">
+                        <div class="success-content">
+                            <div class="success-icon-circle">
+                                <i data-lucide="check" class="success-icon"></i>
+                            </div>
+                            <h3>Message Sent!</h3>
+                            <p>Thank you for reaching out. We will get back to you shortly to tell your story.</p>
+                            <button type="button" class="btn btn-outline btn-sm" id="close-success-btn">Send Another</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p class="copyright">&copy; 2026 The Leo production. All rights reserved.</p>
+            <p class="footer-tagline">We Tell Your Story.</p>
+        </div>
+    </footer>
+
+    <!-- Video Theater Modal -->
+    <div class="modal" id="theater-modal">
+        <div class="modal-backdrop" id="theater-backdrop"></div>
+        <div class="modal-dialog theater-dialog">
+            <button class="modal-close-btn" id="theater-close" aria-label="Close Video Player">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="theater-video-wrapper">
+                <div class="video-container" id="theater-video-container">
+                    <!-- Dynamic iFrame or Video element will be loaded here -->
+                </div>
+            </div>
+            <div class="theater-details">
+                <h3 id="theater-title">Video Title</h3>
+                <span class="category-badge" id="theater-category">Category</span>
+                <p id="theater-desc">Video Description</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Entry -->
+    <script src="index.js"></script>
+</body>
+</html>
