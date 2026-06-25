@@ -6,7 +6,7 @@
     <meta name="description" content="The Leo production - Professional Video Editor. We don't just edit, we tell your story. Custom reels, weddings, events, music videos, and video production services.">
     <meta name="keywords" content="video editor, reels editor, wedding video editor, music video editing, video production, the leo production">
     <meta name="author" content="The Leo production">
-    <title>The Leo production | Professional Video Editor</title>
+    <title>The Leo production | Professional Multimedia Producer</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +35,8 @@
                 <a href="#services">Services</a>
                 <a href="#pillars">Pillars</a>
                 <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#testimonials">Contact & FAQ</a>
             </nav>
 
             <div class="header-actions">
@@ -58,7 +59,8 @@
             <a href="#services" class="drawer-link">Services</a>
             <a href="#pillars" class="drawer-link">Pillars</a>
             <a href="#portfolio" class="drawer-link">Portfolio</a>
-            <a href="#contact" class="drawer-link">Contact</a>
+            <a href="#gallery" class="drawer-link">Gallery</a>
+            <a href="#testimonials" class="drawer-link">Contact & FAQ</a>
         </nav>
     </div>
     <div class="drawer-overlay" id="drawer-overlay"></div>
@@ -69,7 +71,7 @@
             <div class="hero-content container">
                 <div class="hero-badge" data-reveal>
                     <span class="badge-line"></span>
-                    <span class="badge-text">PROFESSIONAL VIDEO EDITOR</span>
+                    <span class="badge-text">PROFESSIONAL MULTIMEDIA PRODUCER</span>
                     <span class="badge-line"></span>
                 </div>
                 
@@ -89,7 +91,7 @@
 
                 <div class="hero-ctas" data-reveal>
                     <a href="#portfolio" class="btn btn-primary btn-glow">View My Works</a>
-                    <a href="#contact" class="btn btn-outline">Let's Collaborate</a>
+                    <a href="#testimonials" class="btn btn-outline">What Clients Say</a>
                 </div>
             </div>
             
@@ -231,10 +233,34 @@
         <section id="portfolio" class="portfolio-section container">
             <div class="section-header text-center">
                 <h2 class="section-title"><span class="gold-underline">SAMPLE WORKS</span></h2>
-                <p class="section-subtitle">A curated collection of recent visual masterpieces.</p>
+                <p class="section-subtitle">Featured cinematic video edits and dynamic social media reels.</p>
             </div>
 
-            <!-- Portfolio Categories Filter -->
+            <!-- Loopable Video Slider (Top Edits) -->
+            <div class="slider-section-container" data-reveal>
+                <div class="main-slider-wrapper">
+                    <div class="slider-viewport">
+                        <div class="slider-track" id="video-slider-track">
+                            <!-- Dynamic video slides will be injected by JS -->
+                        </div>
+                    </div>
+                    
+                    <!-- Slider Arrows -->
+                    <button class="slider-arrow prev-arrow" id="video-prev-btn" aria-label="Previous Slide">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                    </button>
+                    <button class="slider-arrow next-arrow" id="video-next-btn" aria-label="Next Slide">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </button>
+                </div>
+                
+                <!-- Dot Controls -->
+                <div class="slider-dots" id="video-slider-dots">
+                    <!-- Dynamic dots will be injected by JS -->
+                </div>
+            </div>
+
+            <!-- Categories Filter -->
             <div class="portfolio-filters" id="portfolio-filters">
                 <button class="filter-btn active" data-filter="all">All Works</button>
                 <button class="filter-btn" data-filter="reels">Reels</button>
@@ -254,6 +280,38 @@
             </div>
         </section>
 
+        <!-- Dynamic Photo Gallery Slider Section -->
+        <section id="gallery" class="gallery-section container">
+            <div class="section-header text-center">
+                <h2 class="section-title"><span class="gold-underline">CINEMATIC FRAMES</span></h2>
+                <p class="section-subtitle">Visual captures, color grading showcases, and custom graphic stills.</p>
+            </div>
+
+            <!-- Loopable Photo Slider -->
+            <div class="slider-section-container" data-reveal>
+                <div class="main-slider-wrapper photo-slider-height">
+                    <div class="slider-viewport">
+                        <div class="slider-track" id="photo-slider-track">
+                            <!-- Dynamic photo slides will be injected by JS -->
+                        </div>
+                    </div>
+                    
+                    <!-- Slider Arrows -->
+                    <button class="slider-arrow prev-arrow" id="photo-prev-btn" aria-label="Previous Photo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                    </button>
+                    <button class="slider-arrow next-arrow" id="photo-next-btn" aria-label="Next Photo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </button>
+                </div>
+                
+                <!-- Dot Controls -->
+                <div class="slider-dots" id="photo-slider-dots">
+                    <!-- Dynamic dots will be injected by JS -->
+                </div>
+            </div>
+        </section>
+
         <!-- Quote / Passion Section -->
         <section class="quote-section">
             <div class="quote-bg-glow"></div>
@@ -265,11 +323,11 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section container">
+        <!-- FAQ & Contact Section -->
+        <section id="testimonials" class="contact-section container">
             <div class="section-header text-center">
-                <h2 class="section-title"><span class="gold-underline">GET IN TOUCH</span></h2>
-                <p class="section-subtitle">Ready to tell your story? Let's discuss your next project.</p>
+                <h2 class="section-title"><span class="gold-underline">FAQ & CONTACT</span></h2>
+                <p class="section-subtitle">Get in touch directly or explore our quick editing guide below.</p>
             </div>
 
             <div class="contact-wrapper">
@@ -278,7 +336,7 @@
                     <div class="info-logo-area">
                         <img src="assets/logo.png" alt="The Leo production logo" class="info-logo">
                         <h3>The Leo production</h3>
-                        <p class="info-subtitle">PROFESSIONAL VIDEO EDITOR</p>
+                        <p class="info-subtitle">PROFESSIONAL MULTIMEDIA PRODUCER</p>
                     </div>
 
                     <div class="info-details-box">
@@ -314,54 +372,59 @@
                     </div>
                 </div>
 
-                <!-- Contact Form -->
-                <form class="contact-form" id="contact-form" data-reveal>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <input type="text" id="contact-name" name="name" required placeholder=" ">
-                            <label for="contact-name">Your Name</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="contact-email" name="email" required placeholder=" ">
-                            <label for="contact-email">Email Address</label>
-                        </div>
+                <!-- FAQ Section (useful & simple alternative) -->
+                <div class="faq-wrapper" data-reveal>
+                    <div class="faq-header">
+                        <h3>Frequently Asked Questions</h3>
+                        <p class="section-subtitle" style="text-align: left; margin-bottom: 24px;">Got questions about the editing process? Here are some quick answers.</p>
                     </div>
                     
-                    <div class="form-group">
-                        <select id="contact-project" name="project" required>
-                            <option value="" disabled selected hidden>Select Project Type</option>
-                            <option value="Reels Edit">Reels Edit</option>
-                            <option value="Wedding Highlight">Wedding Video Edit</option>
-                            <option value="Event Coverage">Event Video Edit</option>
-                            <option value="Music Video">Music Video Editing</option>
-                            <option value="Video Production">Full Video Production</option>
-                            <option value="Other">Other Digital Editing</option>
-                        </select>
-                        <i data-lucide="chevron-down" class="select-chevron"></i>
-                    </div>
-
-                    <div class="form-group">
-                        <textarea id="contact-message" name="message" rows="5" required placeholder=" "></textarea>
-                        <label for="contact-message">Tell me about your project & vision...</label>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary btn-glow btn-block" id="form-submit-btn">
-                        <span>Send Message</span>
-                        <i data-lucide="send" class="btn-icon"></i>
-                    </button>
-                    
-                    <!-- Submission Success Overlay -->
-                    <div class="form-success-overlay" id="form-success-overlay">
-                        <div class="success-content">
-                            <div class="success-icon-circle">
-                                <i data-lucide="check" class="success-icon"></i>
+                    <div class="faq-container">
+                        <!-- FAQ Item 1 -->
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>What is your typical turnaround time?</span>
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Reels and short-form content are usually delivered in 3-5 business days. Long-form video editing (such as wedding highlights or music videos) typically takes 2-4 weeks depending on the complexity.</p>
                             </div>
-                            <h3>Message Sent!</h3>
-                            <p>Thank you for reaching out. We will get back to you shortly to tell your story.</p>
-                            <button type="button" class="btn btn-outline btn-sm" id="close-success-btn">Send Another</button>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>How do we handle revisions?</span>
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We offer 2 rounds of revisions on all packages to adjust cuts, color grading, sound design, or text overlays. Clear feedback helps ensure we match your creative vision perfectly.</p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>How should I send my raw footage?</span>
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>You can upload your raw video assets to Google Drive, Dropbox, or WeTransfer and share the link with us via email or Instagram message. Organizing files into folders is highly appreciated!</p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>What editing software do you use?</span>
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We edit primarily on Adobe Premiere Pro and DaVinci Resolve for premium color grading, along with Adobe After Effects for complex visual transitions and motion graphics.</p>
+                            </div>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
         </section>
     </main>
@@ -370,7 +433,7 @@
     <footer class="main-footer">
         <div class="container footer-content">
             <p class="copyright">&copy; 2026 The Leo production. All rights reserved.</p>
-            <p class="footer-tagline">We Tell Your Story.</p>
+            <p class="footer-tagline">Turning Moments into Cinematic Stories.</p>
         </div>
     </footer>
 
@@ -393,6 +456,8 @@
             </div>
         </div>
     </div>
+
+
 
     <!-- Script Entry -->
     <script src="index.js"></script>
